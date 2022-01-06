@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Js for beginer</title>
+</head>
+<body>
+	<h1 style="text-align: center;"> Máy Tính Javasript </h1>
+<script >
+	function tong(a, b){
+return a+b;
+}
+function hieu(a, b){
+return a-b;
+}
+function tich(a, b){
+return a*b;
+}
+function thuong(a, b){
+return a/b;
+}
+var a = parseFloat(prompt('nhap so a = '));
+var b = parseFloat(prompt('nhap so b = '));
+var c = prompt('nhap bieu thuc tinh toan: ');
+switch(c){
+case '+': {
+document.write('a + b = ' +tong(a, b));
+break;
+}
+case '-':{
+document.write('a - b = ' +hieu(a, b));
+break;
+}
+case '*':{
+document.write('a * b = ' +tich(a, b));
+break;
+}
+case '/':{
+document.write('a / b = ' +thuong(a, b));
+break;
+}
+}
+</script>
+</body>
+</html>
